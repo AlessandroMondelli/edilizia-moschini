@@ -140,17 +140,26 @@ ul {
 /* Header */
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
-  height: 100px;
+  padding: 10px 25px;
+  height: 130px;
   background-color: var(--background-primary);
   z-index: 9999;
+  transition: all 0.2s ease;
+}
+
+#header.fixed {
+  height: 100px;
 }
 
 .logo__img {
-  width: 80px;
+  width: 90px;
 }
 
 .menu__wrapper {
@@ -166,7 +175,7 @@ ul {
 /* Hero */
 #hero {
   height: 100%;
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 .hero__logo {
@@ -290,6 +299,7 @@ ul {
 
   #hero {
     height: calc(100dvh - 100px);
+    margin-top: 125px;
   }
 }
 
